@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Luis Alberto - Portfolio</title>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen pt-24">
+    <!-- Header com Navegação -->
+    <header class="bg-gray-800 py-6 fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-4">
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex justify-center space-x-8">
+                <li><a href="#home" class="text-white hover:text-blue-400 transition-colors font-semibold relative group">HOME
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a></li>
+                <li><a href="#sobre" class="text-white hover:text-blue-400 transition-colors font-semibold relative group">SOBRE MIM
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a></li>
+                <li><a href="#habilidades" class="text-white hover:text-blue-400 transition-colors font-semibold relative group">HABILIDADES
+                    <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a></li>
+                <li><a href="#projetos"
+                        class="text-white hover:text-blue-400 transition-colors font-semibold relative group">PROJETOS
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a></li>
+                <li><a href="#contato"
+                        class="text-white hover:text-blue-400 transition-colors font-semibold relative group">CONTATO
+                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></div>
+                </a></li>
+            </ul>
+
+            <!-- Botão Menu Mobile -->
+            <div class="md:hidden flex justify-start">
+                <button id="menuBtn" class="text-white hover:text-blue-400 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile Overlay -->
+            <div id="mobileMenu" class="md:hidden fixed top-24 left-0 right-0 bottom-0 bg-black bg-opacity-30 z-40 hidden transition-opacity duration-300">
+                <div class="fixed top-24 left-0 w-80 h-full bg-gray-800 bg-opacity-95 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out">
+                    <div class="px-6 py-8">
+                        <div class="space-y-6">
+                            <a href="#home" class="block text-white hover:text-blue-400 transition-colors font-semibold py-3 text-left border-b border-gray-600 hover:border-blue-400">HOME</a>
+                            <a href="#sobre" class="block text-white hover:text-blue-400 transition-colors font-semibold py-3 text-left border-b border-gray-600 hover:border-blue-400">SOBRE MIM</a>
+                            <a href="#habilidades" class="block text-white hover:text-blue-400 transition-colors font-semibold py-3 text-left border-b border-gray-600 hover:border-blue-400">HABILIDADES</a>
+                            <a href="#projetos" class="block text-white hover:text-blue-400 transition-colors font-semibold py-3 text-left border-b border-gray-600 hover:border-blue-400">PROJETOS</a>
+                            <a href="#contato" class="block text-white hover:text-blue-400 transition-colors font-semibold py-3 text-left border-b border-gray-600 hover:border-blue-400">CONTATO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="min-h-[75vh] flex items-center bg-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Conteúdo Texto -->
+                <div class="lg:w-1/2 space-y-6">
+                    <h2 class="text-4xl font-bold text-blue-400">SOBRE MIM</h2>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <h3 class="text-2xl font-semibold mb-4">TITULO</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            PARÁGRAFO DE INTRODUÇÃO SOBRE LUIS
+                        </p>
+                    </div>
+                </div>
+                <!-- Foto -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <div
+                        class="w-64 h-64 bg-gray-700 rounded-full flex items-center justify-center border-4 border-blue-400">
+                        <span class="text-gray-400 text-lg">FOTO DE LUIZ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador -->
+    <hr class="border-gray-600">
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-blue-400 mb-12">MINHAS HABILIDADES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-8 rounded-lg text-center hover:bg-gray-600 transition-colors">
+                    <div class="w-24 h-24 bg-blue-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white text-2xl">💻</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Desenvolvimento</h3>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg text-center hover:bg-gray-600 transition-colors">
+                    <div class="w-24 h-24 bg-green-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white text-2xl">🎨</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Design</h3>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg text-center hover:bg-gray-600 transition-colors">
+                    <div class="w-24 h-24 bg-purple-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white text-2xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Inovação</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador -->
+    <hr class="border-gray-600">
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-blue-400 mb-12">MEUS PROJETOS</h2>
+            <div class="space-y-8">
+                <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-colors">
+                    <h3 class="text-2xl font-semibold mb-4">Projeto 1</h3>
+                    <p class="text-gray-300">Descrição do primeiro projeto com detalhes sobre tecnologias utilizadas.
+                    </p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-colors">
+                    <h3 class="text-2xl font-semibold mb-4">Projeto 2</h3>
+                    <p class="text-gray-300">Descrição do segundo projeto com foco em funcionalidades implementadas.</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg hover:bg-gray-600 transition-colors">
+                    <h3 class="text-2xl font-semibold mb-4">Projeto 3</h3>
+                    <p class="text-gray-300">Descrição do terceiro projeto destacando resultados e aprendizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador -->
+    <hr class="border-gray-600">
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-blue-400 mb-12">CONTATO</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-8 rounded-lg text-center hover:bg-gray-600 transition-colors">
+                    <div class="w-20 h-20 bg-blue-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white text-2xl">📧</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p class="text-gray-300">contato@luizalberto.com.br</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg text-center hover:bg-gray-600 transition-colors">
+                    <div class="w-20 h-20 bg-green-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white text-2xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Telefone</h3>
+                    <p class="text-gray-300">+55 (XX) XXXXX-XXXX</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg text-center hover:bg-gray-600 transition-colors">
+                    <div class="w-20 h-20 bg-purple-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-white text-2xl">🌐</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                    <p class="text-gray-300">linkedin.com/in/luizalberto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-gray-400 mb-2">Copyright © luizalberto.com.br</p>
+            <p class="text-gray-400">Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para Menu Mobile -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let isMenuOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            
+            if (isMenuOpen) {
+                // Mostrar overlay e menu
+                mobileMenu.classList.remove('hidden');
+                // Aguardar um frame para garantir que o elemento está visível
+                requestAnimationFrame(() => {
+                    const menuContent = mobileMenu.querySelector('div');
+                    menuContent.classList.remove('-translate-x-full');
+                });
+                // Mudar ícone para X
+                menuBtn.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                `;
+            } else {
+                // Animar fechamento
+                const menuContent = mobileMenu.querySelector('div');
+                menuContent.classList.add('-translate-x-full');
+                // Aguardar a animação terminar antes de esconder
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+                // Voltar para ícone de hamburguer
+                menuBtn.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                `;
+            }
+        });
+
+        // Fechar menu ao clicar em um link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Animar fechamento
+                const menuContent = mobileMenu.querySelector('div');
+                menuContent.classList.add('-translate-x-full');
+                // Aguardar a animação terminar antes de esconder
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+                isMenuOpen = false;
+                // Voltar para ícone de hamburguer
+                menuBtn.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                `;
+            });
+        });
+
+        // Fechar menu ao clicar fora dele
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                // Animar fechamento
+                const menuContent = mobileMenu.querySelector('div');
+                menuContent.classList.add('-translate-x-full');
+                // Aguardar a animação terminar antes de esconder
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+                isMenuOpen = false;
+                // Voltar para ícone de hamburguer
+                menuBtn.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                `;
+            }
+        });
+    </script>
+</body>
+
+</html>
